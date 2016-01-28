@@ -93,7 +93,7 @@ print('And how many times would you like to guess?')
 print('Enter only integers:')
 totalGuesses = input()
 
-print('I am thinking of a number between 1 and ' + topLimit + ' ')
+print('I am thinking of a number between 1 and ' + r + ' ')
 print('You have ' + totalGuesses + ' tries to guess it!')
 print('Take your guess #1:')
 guess = input()

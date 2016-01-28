@@ -87,7 +87,7 @@ if userGuess == userSecretNumber:
         print('Greetings!')
 print('What is the largest number you would like to guess?')
 print('Enter only integers:')
-integer = input()
+integers = input()
 
 print('And how many times would you like to guess?')
 print('Enter only integers:')

@@ -7,10 +7,9 @@ import random
 #   'topLimit' which is the top limit for the random number generator
 # the function returns the random number generated to its caller
 def generateNumber( topLimit ):
-    r = topLimit
-    topLimit = input()
-    if topLimit == 'r':
-        return 'random.randint(1, r)'
+    generateNumber = input(topLimit)
+    r = random.randint(1, topLimit)
+    
     
 
 
@@ -37,9 +36,8 @@ def askUserToGuess( times, secretNumber ):
         print('Take your guess #' + str(guessesTaken) + ': ')
         guess = int(input())
 
-        if evaluateAnswer( guess, secretNumber ) == True:
+    if evaluateAnswer(guess, secretNumber) == True:
             return True
-        
             return False
 # end of askUserToGuess function ----------------------------------
 

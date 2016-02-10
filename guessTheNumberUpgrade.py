@@ -57,7 +57,7 @@ if userGuess < userSecretNumber:
 elif userGuess > userSecretNumber:
     print('Your guess is too high.')
 if userGuess == userSecretNumber:
-    break
+    return True
     
 
     # TO DO: ####################################################
@@ -80,7 +80,7 @@ if userGuess == userSecretNumber:
 #   'showAnswer' is a Boolean value, if that Boolean value is:
 #       True, we'll show the right answer on the screen
 #       False, we won't show the right answer on the screen
-    def playGame( showAnswer ):
+def playGame( showAnswer ):
     
         print('Greetings!')
 print('What is the largest number you would like to guess?')
@@ -122,8 +122,8 @@ if( showAnswer == True ):
             print('--shhh, the real number is ' + str(theNumber) + '.')
     
     #this gives a sucess/fail message if the user guessed correctly in the allotted attempts
-    if askUserToGuess(totalGuesses,theNumber) == True:
+if askUserToGuess(totalGuesses,theNumber) == True:
         print('Good job! You guessed my number!')
-    else:
+else:
         print('Nope. The number I was thinking of was ' + str(theNumber))
 # end of playGame function -----------------------------------------

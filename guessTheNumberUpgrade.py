@@ -54,8 +54,10 @@ userGuess = int(input())
 
 if userGuess < userSecretNumber:
     print('Your guess is too low.')
-elif userGuess > userSecretNumber:
+    return False
+if userGuess > userSecretNumber:
     print('Your guess is too high.')
+    return False
 if userGuess == userSecretNumber:
     return True
     
